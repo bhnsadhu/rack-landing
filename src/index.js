@@ -1,40 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import { AuthProvider } from './AuthContext';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
-import Feed from './pages/Feed';
-import Post from './pages/Post';
-import Profile from './pages/Profile';
-import Store from './pages/Store';
-import Saved from './pages/Saved';
-import PostDetail from './pages/PostDetail';
-import Search from './pages/Search';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/feed" element={<Feed />} />
-          <Route path="/post" element={<Post />} />
-          <Route path="/profile/:username" element={<Profile />} />
-          <Route path="/store/:id" element={<Store />} />
-          <Route path="/saved" element={<Saved />} />
-          <Route path="/post/:id" element={<PostDetail />} />
-          <Route path="/search" element={<Search />} />
-        </Routes>
-      </AuthProvider>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
-
-reportWebVitals();
