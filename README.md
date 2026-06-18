@@ -1,29 +1,26 @@
-# Rack
+# Rack — Landing Page
+**Your city's closet, all in one rack.**
 
-Your city's closet, all in one rack.
-
-## What it is
-
-Rack is a social fashion discovery app. Users "rack" (save and bookmark) stores and items they find locally, follow people with great taste, and use AI photo search to find similar items nearby. It's like a shared closet for your city, built around real people, real finds, and real prices.
-
-## Features
-
-- Discover stores near you, ranked by real people based on real ratings on specific pieces
-- Follow people whose style you like and see what they're finding
-- Snap a photo of an item and find similar pieces available nearby
-- Save and organize finds into your own personal rack
-- Email waitlist for early access
-
-## Tech stack
-
-- React
-- Vercel for hosting and deployment
-- Formspree for waitlist signups
+Marketing and waitlist landing page for Rack, a social fashion discovery app built for Chicago.
 
 ## Status
+🚧 **Waitlist open** — collecting early interest ahead of public launch.
 
-Currently in the validation phase. The landing page is live and collecting signups from early interest groups before building out the full app (auth, posting, feed, store pages).
+## About
+Rack lets you discover what people near you are finding at local stores. Real people, real finds, real prices. Follow people with good taste, explore trending items, and know what's worth the trip before you go.
+
+## Tech Stack
+- React (Create React App)
+- Formspree (waitlist form)
+- Vercel (hosting)
+
+## Local Development
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm start`
+
+No environment variables needed — waitlist form is handled by Formspree.
 
 ## Live
-
-rack-beta.vercel.app
+- Landing: rack-landing-ashy.vercel.app
+- App: rack-beta.vercel.app
